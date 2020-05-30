@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bootsrap 4.5</title>
+
+<!-- Font Awesome CDN-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.css" integrity="sha256-2SjB4U+w1reKQrhbbJOiQFARkAXA5CGoyk559PJeG58=" crossorigin="anonymous" />
+
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+    <div class="container">
+
+<!--
+    pagination
+<ul class="pagination pagination-md justify-content-end">
+    <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+        <li class="page-item"><a class="page-link" href="#">1</a></li>
+    <li class="page-item"><a class="page-link" href="#">2</a></li>
+    <li class="page-item active"><a class="page-link" href="#">3</a></li>
+    <li class="page-item"><a class="page-link" href="#">4</a></li>
+    <li class="page-item"><a class="page-link" href="#">5</a></li>
+            <li class="page-item"><a class="page-link" href="#">Next</a></li>
+</ul>
+//Spinners
+<div class="spinner-border spinner-border-sm text-muted"></div>
+<div class="spinner-border text-primary"></div>
+<div class="spinner-border text-secondary"></div>
+<div class="spinner-border text-info"></div>
+<div class="spinner-border text-warning"></div>
+<div class="spinner-border text-danger"></div>
+<div class="spinner-border text-success"></div>
+<div class="spinner-border text-dark"></div>
+<div class="spinner-border text-light"></div>
+<div class="spinner-grow text-success"></div>
+spinner button
+<button type="button" class="btn btn-success">loading...
+    <div class="spinner-border  spinner-border-sm text-primary"></div>
+</button>
+//Progress Bar
+<div class="progress" style="height: 20px">
+    <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning" style="width:30%">30%</div>
+    <div class="progress-bar progress-bar-striped progress-bar-animated bg-success" style="width:40%">40%</div>
+    <div class="progress-bar progress-bar-striped progress-bar-animated bg-danger" style="width:30%">30%</div>
+</div>
+//badges
+<h1>Example Heading<span class="badge badge-secondary">New</span></h1>
+<h2>Example Heading<span class="badge badge-pill badge-warning">New</span></h2>
+<h3>Example Heading<span class="badge badge-pill badge-success">New</span></h3>
+<button type="button" class="btn btn-primary">
+messages<span class="badge badge-pill badge-info">4</span>
+</button>
+//cards
+<div class="card">
+    <div class="card-header">Header</div>
+        <div class="card-body">Content</div>
+    <div class="card-footer">Footer</div>
+    //example 2
+<div class="card">
+    <div class="card-body">
+        <h4 class="card-title">Card title</h4>
+        <p class="card-text">Some Example text.Some Example text.</p>
+        <a href="#" class="card-link">Card link</a>
+                <a href="#" class="card-link">Another link</a>
+    </div>
+</div>
+</div>
+
+<div class="card-deck">//the deck may be replaced by columns or group
+    <div class="card bg-primary">
+        <div class="card-body text-center">
+            <p ckass="card-text">Some text inside the first card</p>
+        </div>
+    </div>
+
+    <div class="card bg-info">
+        <div class="card-body text-center">
+            <p ckass="card-text">Some text inside the first card</p>
+        </div>
+    </div>
+
+<div class="card bg-warning">
+        <div class="card-body text-center">
+            <p ckass="card-text">Some text inside the first card</p>
+        </div>
+    </div>
+
+<div class="card bg-danger">
+        <div class="card-body text-center">
+            <p ckass="card-text">Some text inside the first card</p>
+        </div>
+    </div>
+
+<div class="card bg-success">
+        <div class="card-body text-center">
+            <p ckass="card-text">Some text inside the first card</p>
+        </div>
+    </div>
+
+</div>
+//Dropdowns
+<div class="dropdown dropright">
+<button type="button"class="btn btn-success dropdown-toggle" data-toggle="dropdown">
+    Dropdown
+</button>
+<div class="dropdown-menu">
+    <a href="#" class="dropdown-item active">Active</a>
+        <a href="#" class="dropdown-item disabled">Disabled</a>
+    <a href="#" class="dropdown-item">Link3</a>
+
+    <a href="#" class="dropdown-item">Another Link</a>
+</div>
+</div>
+//another example
+<div class="btn-group">
+  <button type="button" class="btn btn-primary">Apple</button>
+  <button type="button" class="btn btn-primary">Samsung</button>
+  <div class="btn-group">
+    <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+       Sony
+    </button>
+    <div class="dropdown-menu">
+      <a class="dropdown-item" href="#">Tablet</a>
+      <a class="dropdown-item" href="#">Smartphone</a>
+    </div>
+  </div>
+</div>
+//Collapse
+<button data-toggle="collapse" data-target="#demo">Collapsible</button>
+<div id="demo" class="collapse">
+Lorem ipsum dolor text....
+</div>
+//accordion
+
+<div id="accordion">
+
+  <div class="card">
+    <div class="card-header">
+      <a class="card-link" data-toggle="collapse" href="#collapseOne">
+        Collapsible Group Item #1
+      </a>
+    </div>
+    <div id="collapseOne" class="collapse" data-parent="#accordion">
+      <div class="card-body">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi corrupti ex impedit, iste perspiciatis expedita minus libero quo accusantium facere, doloribus cum tenetur! Repellendus accusamus fuga animi culpa doloribus, quaerat vel vitae minima praesentium illum at inventore ratione reprehenderit quasi ut corrupti provident, quia aperiam sequi deserunt? Aperiam, harum animi!
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-header">
+      <a class="collapsed card-link" data-toggle="collapse" href="#collapseTwo">
+        Collapsible Group Item #2
+      </a>
+    </div>
+    <div id="collapseTwo" class="collapse" data-parent="#accordion">
+      <div class="card-body">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus possimus natus, aspernatur adipisci ratione dolorum voluptas, velit ullam quo dolorem vero quasi eligendi eveniet quisquam autem illo accusantium qui ut iste? Fugiat excepturi voluptate error in impedit autem, consequatur amet, explicabo voluptatem eligendi odio eos? Quam dolorum doloremque necessitatibus. Accusantium.
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-header">
+      <a class="collapsed card-link" data-toggle="collapse" href="#collapseThree">
+        Collapsible Group Item #3
+      </a>
+    </div>
+    <div id="collapseThree" class="collapse" data-parent="#accordion">
+      <div class="card-body">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex aspernatur laboriosam suscipit numquam esse quisquam maiores natus. Odio fugiat in aut quasi quia ullam assumenda at inventore. Aut fugit eveniet, in a non itaque perferendis sapiente quibusdam officia quod quas at aliquam? Cumque commodi, temporibus magni quos non a laborum!
+      </div>
+    </div>
+  </div>
+</div>
+//navigation
+<ul class="nav nav-tabs">
+  <li class="nav-item">
+    <a class="nav-link active" href="#">Active</a>
+  </li>
+  <li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">Dropdown</a>
+    <div class="dropdown-menu">
+      <a class="dropdown-item" href="#">Link 1</a>
+      <a class="dropdown-item" href="#">Link 2</a>
+      <a class="dropdown-item" href="#">Link 3</a>
+    </div>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#">Link</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link disabled" href="#">Disabled</a>
+  </li>
+</ul>
+
+<ul class="nav nav-pills" role="tablist">
+  <li class="nav-item">
+    <a class="nav-link active" data-toggle="pill" href="#home">Home</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" data-toggle="pill" href="#menu1">Menu 1</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" data-toggle="pill" href="#menu2">Menu 2</a>
+  </li>
+</ul>
+
+//Tab panes
+  <div class="tab-content">
+
+    <div id="home" class="container tab-pane active"><br>
+      <h3>HOME</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    </div>
+
+    <div id="menu1" class="container tab-pane fade"><br>
+      <h3>Menu 1</h3>
+      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div>
+    
+    <div id="menu2" class="container tab-pane fade"><br>
+      <h3>Menu 2</h3>
+      <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+    </div>
+  </div>
+
+
+  <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+  //Brand 
+  <a class="navbar-brand" href="#">Logo</a>
+
+  //Toggler/collapsibe Button 
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  // Navbar links 
+  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+      </li>
+      <li>
+          <form class="form-inline" action="/action_page.php">
+    <input class="form-control mr-sm-2" type="text" placeholder="Search">
+    <button class="btn btn-success" type="submit">Search</button>
+  </form>
+
+      </li>
+    </ul>
+  </div>
+</nav>
+//forms
+
+<form action="/action_page.php" class="was-validated">
+  <div class="form-group">
+    <label for="uname">Username:</label>
+    <input type="text" class="form-control" id="uname" placeholder="Enter username" name="uname" required>
+    <div class="valid-feedback">Valid.</div>
+    <div class="invalid-feedback">Please fill out this field.</div>
+  </div>
+  <div class="form-group">
+    <label for="pwd">Password:</label>
+    <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd" required>
+    <div class="valid-feedback">Valid.</div>
+    <div class="invalid-feedback">Please fill out this field.</div>
+  </div>
+  <div class="form-group form-check">
+    <label class="form-check-label">
+      <input class="form-check-input" type="checkbox" name="remember" required> I agree on blabla.
+      <div class="valid-feedback">Valid.</div>
+      <div class="invalid-feedback">Check this checkbox to continue.</div>
+    </label>
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+
+-->
+  
+<form>
+  <div class="custom-file">
+    <input type="file" class="custom-file-input" id="customFile">
+    <label class="custom-file-label" for="customFile">Choose file</label>
+  </div>
+</form>
+
+<script>
+// Add the following code if you want the name of the file appear on select
+$(".custom-file-input").on("change", function() {
+  var fileName = $(this).val().split("\\").pop();
+  $(this).siblings(".custom-file-label").addClass("selected").html(fileName);
+});
+</script>
+
+
+
+
+</div>
+</body>
+</html>

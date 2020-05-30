@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>javasript practice</title>
+
+</head>
+<button onclick="this.innerHTML=Date()" style="float: right">current Date and Time?</button>
+
+<body>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae, dicta.</p>
+        <p id='p1'> </p>
+<p  id='p2'></p>
+<p id='p3'></p>
+
+<button onclick="myFunction2()">Sort Numerically</button>
+
+<script> alert("welcome Back AbdulAkeem, click on Ok to continue");
+</script>
+
+
+
+    <script>
+var points=[40,-100,1,-5,25,10];
+
+function myFunction2() {
+    points.sort(function (a,b) {return a-b});
+    document.getElementById('p3').innerHTML=points;
+
+}
+
+
+</script>  
+
+</body>
+</html>
